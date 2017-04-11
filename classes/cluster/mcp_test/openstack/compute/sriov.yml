@@ -1,0 +1,4 @@
+classes:
+- system.nova.compute.nfv.sriov
+- cluster.mcp_test.openstack.compute
+- system.neutron.compute.nfv.sriov
