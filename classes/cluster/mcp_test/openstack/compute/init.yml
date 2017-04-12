@@ -69,4 +69,3 @@ parameters:
           use_interfaces:
           - bond0.${_param:tenant_vlan}
       bridge: openvswitch
-    
