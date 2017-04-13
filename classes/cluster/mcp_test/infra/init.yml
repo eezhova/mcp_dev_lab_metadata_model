@@ -27,23 +27,6 @@ parameters:
 
     dns_server01: 8.8.8.8
     dns_server02: 8.8.4.4
-    deploy_network_netmask: 255.255.255.0
-    deploy_network_gateway: 
-
-    linux_dhcp_interface:
-      enabled: true
-      type: eth
-      proto: dhcp
-    linux_single_interface:
-      enabled: true
-      type: eth
-      proto: static
-      address: ${_param:single_address}
-      netmask: ${_param:control_network_netmask}
-      gateway: ${_param:control_network_gateway}
-      name_servers:
-        - ${_param:dns_server01}
-        - ${_param:dns_server02}
 
 
   linux:
