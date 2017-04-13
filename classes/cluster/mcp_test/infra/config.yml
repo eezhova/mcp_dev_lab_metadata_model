@@ -24,12 +24,15 @@ parameters:
         openstack_control_node01:
           classes:
           - cluster.${_param:cluster_name}.openstack.control_init
+          - cluster.${_param:cluster_name}.openstack.database_init
         openstack_control_node02:
           classes:
           - cluster.${_param:cluster_name}.openstack.control_init
+          - cluster.${_param:cluster_name}.openstack.database_init
         openstack_control_node03:
           classes:
           - cluster.${_param:cluster_name}.openstack.control_init
+          - cluster.${_param:cluster_name}.openstack.database_init
         openstack_compute_rack01:
           name: ${_param:openstack_compute_rack01_hostname}<<count>>
           domain: ${_param:cluster_domain}
