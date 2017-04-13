@@ -21,6 +21,7 @@ parameters:
     cluster_public_host: ${_param:openstack_proxy_address}
 
     control_network_netmask: 255.255.255.0
+    control_network_gateway: 
     tenant_network_netmask: 255.255.255.0
     control_vlan: 10
     tenant_vlan: 20
