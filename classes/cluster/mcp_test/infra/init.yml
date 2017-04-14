@@ -13,7 +13,7 @@ parameters:
 
     # infra service addresses
     infra_config_hostname: cfg01
-    infra_config_address: 20.10.2.2
+    infra_config_address: 20.10.1.2
     infra_config_deploy_address: 20.10.1.2
 
     cluster_domain: mcp_test.local
