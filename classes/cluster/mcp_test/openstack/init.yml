@@ -18,18 +18,18 @@ parameters:
     neutron_tenant_network_types: "flat,vxlan"
 
     galera_server_cluster_name: openstack_cluster
-    galera_server_maintenance_password: 9999999999999999
-    galera_server_admin_password: 9999999999999999
-    rabbitmq_secret_key: 9999999999999999
-    rabbitmq_admin_password: 9999999999999999
-    rabbitmq_openstack_password: 9999999999999999
+    galera_server_maintenance_password: hhhhhhhhhhhhhhhh
+    galera_server_admin_password: hhhhhhhhhhhhhhhh
+    rabbitmq_secret_key: hhhhhhhhhhhhhhhh
+    rabbitmq_admin_password: hhhhhhhhhhhhhhhh
+    rabbitmq_openstack_password: hhhhhhhhhhhhhhhh
     glance_version: ${_param:openstack_version}
     glance_service_host: ${_param:openstack_control_address}
     keystone_version: ${_param:openstack_version}
     keystone_service_host: ${_param:openstack_control_address}
     heat_version: ${_param:openstack_version}
     heat_service_host: ${_param:openstack_control_address}
-    heat_domain_admin_password: 9999999999999999
+    heat_domain_admin_password: hhhhhhhhhhhhhhhh
     cinder_version: ${_param:openstack_version}
     cinder_service_host: ${_param:openstack_control_address}
     nova_version: ${_param:openstack_version}
@@ -50,37 +50,37 @@ parameters:
 
 
     mysql_admin_user: root
-    mysql_aodh_password: 9999999999999999
-    mysql_admin_password: 9999999999999999
-    mysql_cinder_password: 9999999999999999
-    mysql_ceilometer_password: 9999999999999999
-    mysql_glance_password: 9999999999999999
-    mysql_heat_password: 9999999999999999
-    mysql_keystone_password: 9999999999999999
-    mysql_neutron_password: 9999999999999999
-    mysql_nova_password: 9999999999999999
-    keystone_service_token: 9999999999999999
-    keystone_admin_password: 9999999999999999
-    keystone_ceilometer_password: 9999999999999999
-    keystone_cinder_password: 9999999999999999
-    keystone_glance_password: 9999999999999999
-    keystone_heat_password: 9999999999999999
-    keystone_keystone_password: 9999999999999999
-    keystone_neutron_password: 9999999999999999
-    keystone_nova_password: 9999999999999999
-    keystone_aodh_password: 9999999999999999
-    ceilometer_secret_key: 9999999999999999
+    mysql_aodh_password: hhhhhhhhhhhhhhhh
+    mysql_admin_password: hhhhhhhhhhhhhhhh
+    mysql_cinder_password: hhhhhhhhhhhhhhhh
+    mysql_ceilometer_password: hhhhhhhhhhhhhhhh
+    mysql_glance_password: hhhhhhhhhhhhhhhh
+    mysql_heat_password: hhhhhhhhhhhhhhhh
+    mysql_keystone_password: hhhhhhhhhhhhhhhh
+    mysql_neutron_password: hhhhhhhhhhhhhhhh
+    mysql_nova_password: hhhhhhhhhhhhhhhh
+    keystone_service_token: hhhhhhhhhhhhhhhh
+    keystone_admin_password: hhhhhhhhhhhhhhhh
+    keystone_ceilometer_password: hhhhhhhhhhhhhhhh
+    keystone_cinder_password: hhhhhhhhhhhhhhhh
+    keystone_glance_password: hhhhhhhhhhhhhhhh
+    keystone_heat_password: hhhhhhhhhhhhhhhh
+    keystone_keystone_password: hhhhhhhhhhhhhhhh
+    keystone_neutron_password: hhhhhhhhhhhhhhhh
+    keystone_nova_password: hhhhhhhhhhhhhhhh
+    keystone_aodh_password: hhhhhhhhhhhhhhhh
+    ceilometer_secret_key: hhhhhhhhhhhhhhhh
     horizon_version: ${_param:openstack_version}
-    horizon_secret_key: 9999999999999999999999999999999999999999999999999999999999999999
+    horizon_secret_key: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     horizon_identity_host: ${_param:openstack_control_address}
     horizon_identity_encryption: none
     horizon_identity_version: 3
     mongodb_server_replica_set: ceilometer
-    mongodb_ceilometer_password: 9999999999999999
-    mongodb_admin_password: 9999999999999999
-    mongodb_shared_key: 9999999999999999999999999999999999999999999999999999999999999999
-    metadata_password: 9999999999999999
-    openstack_telemetry_keepalived_password: 9999999999999999
+    mongodb_ceilometer_password: hhhhhhhhhhhhhhhh
+    mongodb_admin_password: hhhhhhhhhhhhhhhh
+    mongodb_shared_key: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    metadata_password: hhhhhhhhhhhhhhhh
+    openstack_telemetry_keepalived_password: hhhhhhhhhhhhhhhh
     salt_pki_proxy_alt_names: IP:${_param:cluster_public_host},DNS:${_param:cluster_public_host},IP:${_param:openstack_proxy_address},DNS:horizon.${_param:cluster_domain}
     
     # openstack service addresses
@@ -133,11 +133,11 @@ parameters:
     openstack_message_queue_node03_hostname: msg03
     
     # Billing
-    #keystone_billometer_password: 9999999999999999
+    #keystone_billometer_password: hhhhhhhhhhhhhhhh
     #keystone_billometer_address: ${_param:billometer_service_host}
     #billometer_service_host: ${_param:openstack_billing_address}
     #billometer_version: ${_param:openstack_version}
-    #billometer_secret_key: 9999999999999999999999999999999999999999999999999999999999999999
+    #billometer_secret_key: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     #billometer_identity_password: ${_param:keystone_billometer_password}
     #billometer_identity_host: ${_param:openstack_control_address}
     #billometer_identity_token: ${_param:keystone_service_token}
