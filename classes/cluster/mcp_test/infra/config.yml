@@ -6,6 +6,8 @@ classes:
 - system.salt.master.api
 - system.reclass.storage.salt
 - system.reclass.storage.system.openstack_control_cluster
+- system.keystone.client.single
+- system.keystone.client.service.nova21
 - cluster.mcp_test.infra
 parameters:
   _param:
@@ -23,19 +25,16 @@ parameters:
       node:
         openstack_control_node01:
           classes:
-          - cluster.${_param:cluster_name}.openstack.control_init
           - service.galera.master.cluster
           params:
             mysql_cluster_role: master
         openstack_control_node02:
           classes:
-          - cluster.${_param:cluster_name}.openstack.control_init
           - service.galera.slave.cluster
           params:
             mysql_cluster_role: slave
         openstack_control_node03:
           classes:
-          - cluster.${_param:cluster_name}.openstack.control_init
           - service.galera.slave.cluster
           params:
             mysql_cluster_role: slave
