@@ -8,6 +8,7 @@ classes:
 - system.reclass.storage.system.openstack_control_cluster
 - system.keystone.client.single
 - system.keystone.client.service.nova21
+- system.reclass.storage.system.openstack_gateway_cluster
 - cluster.mcp_test.infra
 parameters:
   _param:
