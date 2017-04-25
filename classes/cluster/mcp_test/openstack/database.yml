@@ -15,7 +15,7 @@ classes:
 - cluster.mcp_test.infra
 parameters:
   _param:
-    keepalived_vip_interface: eth1
+    keepalived_vip_interface: enp0s4
     keepalived_vip_virtual_router_id: 80
     galera_server_cluster_name: openstack_cluster
     cluster_vip_address: ${_param:openstack_database_address}

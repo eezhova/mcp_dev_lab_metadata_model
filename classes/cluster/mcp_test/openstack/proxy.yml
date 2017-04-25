@@ -16,7 +16,7 @@ classes:
 - cluster.mcp_test.openstack.dashboard
 parameters:
   _param:
-    keepalived_vip_interface: eth1
+    keepalived_vip_interface: enp0s4
     keepalived_vip_virtual_router_id: 240
     nginx_proxy_ssl:
       enabled: true

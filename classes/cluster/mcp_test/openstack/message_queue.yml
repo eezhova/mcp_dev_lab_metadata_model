@@ -7,7 +7,7 @@ classes:
 - cluster.mcp_test.infra
 parameters:
   _param:
-    keepalived_vip_interface: eth1
+    keepalived_vip_interface: enp0s4
     keepalived_vip_virtual_router_id: 90
     cluster_vip_address: ${_param:openstack_message_queue_address}
     cluster_local_address: ${_param:single_address}
