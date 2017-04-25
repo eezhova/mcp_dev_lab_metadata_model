@@ -29,16 +29,19 @@ parameters:
           - service.galera.master.cluster
           params:
             mysql_cluster_role: master
+            linux_system_codename: xenial
         openstack_control_node02:
           classes:
           - service.galera.slave.cluster
           params:
             mysql_cluster_role: slave
+            linux_system_codename: xenial
         openstack_control_node03:
           classes:
           - service.galera.slave.cluster
           params:
             mysql_cluster_role: slave
+            linux_system_codename: xenial
         openstack_compute_rack01:
           name: ${_param:openstack_compute_rack01_hostname}<<count>>
           domain: ${_param:cluster_domain}
