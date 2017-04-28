@@ -17,6 +17,7 @@ parameters:
     nova_vncproxy_url: https://${_param:cluster_public_host}:6080
     primary_interface: enp0s4
     tenant_interface: enp0s5
+    interface_mtu: 1500
 
   linux:
     network:
