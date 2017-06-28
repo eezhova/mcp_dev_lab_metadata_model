@@ -12,6 +12,7 @@ classes:
 - system.keystone.server.cluster
 - system.glance.control.cluster
 - system.nova.control.cluster
+- system.haproxy.proxy.listen.openstack.nova-placement
 - system.cinder.control.cluster
 - system.cinder.volume.single
 - system.heat.server.cluster
