@@ -1,10 +1,14 @@
 classes:
 - system.linux.system.repo.mcp.salt
+- system.linux.system.repo.mcp.extra
+- system.linux.system.repo.ubuntu
+- system.linux.system.repo.glusterfs
 - system.openssh.client.lab
 - system.salt.master.pkg
 - system.salt.minion.ca.salt_master
 - system.salt.master.api
 - system.reclass.storage.salt
+- system.xtrabackup.server.single
 - system.reclass.storage.system.openstack_control_cluster
 - system.keystone.client.single
 - system.keystone.client.service.nova21
