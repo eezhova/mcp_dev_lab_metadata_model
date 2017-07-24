@@ -13,8 +13,8 @@ parameters:
 
     # infra service addresses
     infra_config_hostname: cfg01
-    infra_config_address: 10.30.1.2
-    infra_config_deploy_address: 10.30.1.2
+    infra_config_address: 10.157.1.2
+    infra_config_deploy_address: 10.157.1.2
 
     salt_minion_ca_host: ${_param:infra_config_hostname}.${_param:cluster_domain}
 
