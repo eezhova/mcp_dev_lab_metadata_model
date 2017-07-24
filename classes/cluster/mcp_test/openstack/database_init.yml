@@ -1,3 +1,2 @@
 classes:
 - system.mysql.client.single
-- system.xtrabackup.client.single
